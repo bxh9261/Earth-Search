@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" type="text/css" href="styles/default-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <script src="./src/loader.js" type="module"></script>
+</head>
+<body>
+
+<div id='map'></div>
+<!-- Use any element to open the sidenav -->
+<div id="opener">
+    <button class="openbtn"><img src="https://img.icons8.com/dotty/80/000000/search.png"/></button>
+</div>
+<div id="filterNav" class="sidenav">
+    <h1>Earth Search</h1>
+    <div class="controls">
+        <h2> Search by Country Name </h2>
+        <input id="input" type="text" size="50" maxlength="50" autofocus value=""/>
+    </div>
+    <div class="controls">
+        <h2> Population </h2>
+        <label class="container">Greater Than
+          <input type="radio" checked="checked" name="radio" id="greater">
+          <span class="radio"></span>
+        </label>
+        <label class="container">Less Than
+          <input type="radio" name="radio" id="less">
+          <span class="radio"></span>
+        </label>
+        <input id="popinput" type="text" size="50" maxlength="50" autofocus value="0"/>
+    </div>
+    
+    <div class="controls">
+        <h2> Language Spoken </h2>
+        <select id="languages">
+            <option value="All">All</option>
+        </select>
+    </div>
+    <div class="controls">
+        <button id="searchbtn" class="buttons">Search</button>
+        <button id="resetbtn" class="buttons">Reset</button>
+    </div>
+    <div class="controls" id="results"></div>
+    <div class="controls">
+        <button id="btn1" class="buttons">Random</button>
+    </div>
+
+</div>
+
+    
+<div id="zoom">
+    <button id="plus">+</button>
+    <button id="minus">-</button>
+    <button id="btn2"><img src="https://img.icons8.com/ios-filled/50/000000/globe-earth.png"/></button>
+    <a id="credit" href="https://icons8.com/icon/42237/search">Icons by icons8</a>
+</div>
+
+</body>
+</html>

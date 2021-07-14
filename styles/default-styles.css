@@ -1,0 +1,200 @@
+/*------------------------------------------------------THE STUFF THAT WAS HERE ALREADY--------------------------------------------*/
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Special Elite', cursive;
+      }
+
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+      .marker {
+          background-image: url('../images/coffee-icon.png');
+          background-size: cover;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          cursor: pointer;
+      }
+      .mapboxgl-popup {
+          max-width: 200px;
+      }
+
+      .mapboxgl-popup-content {
+          text-align: center;
+      }
+      .poi {
+          background-size: cover;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          cursor: pointer;
+          background-position: center center;
+          background-repeat: no-repeat;
+      }
+h1{
+    margin-top: 0%;
+}
+
+/*------------------------------------------------------CONTROLS--------------------------------------------*/
+
+.controls{
+    width: 80%;
+    height: auto;
+    margin-bottom: 8%;
+    display: inline-block;
+}
+
+.controls input[type=text]{
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.controls button{
+    background-color: white;
+    font-weight: bold;
+}
+
+.controls .buttons{
+    font-size: .9em;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 2%;
+    margin-top: 2%;
+}
+.controls button:hover{
+    background-color: #EEE;
+}
+
+.controls select{
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.controls h2{
+    margin-bottom: 0%;
+}
+
+/*------------------------------------------------------SIDE MENU--------------------------------------------*/
+/* Much of this code comes from https://www.w3schools.com/howto/howto_js_collapse_sidepanel.asp */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #CCC; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 3%; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  color: black;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+#opener button{
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: 0px;
+    background-color: #CCC; /* Black */
+    border: none;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    transition: 0.5s;
+    padding: 1%;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: 'Special Elite', cursive;
+}
+
+/*------------------------------------------------------RESULTS BOX--------------------------------------------*/
+
+#results{
+    background-color: white;
+    overflow-y: auto;
+    height: 30%;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.country{
+    border: 2px solid gray;
+    font-size: 100%;
+    width: 100%;
+    padding: 2%;
+}
+
+.country img{
+    height: 50px;
+    float: left;
+}
+
+/*------------------------------------------------------SIDE MENU--------------------------------------------*/
+
+#zoom button{
+    position: absolute;
+    z-index: 1;
+    background-color: #CCC; /* Gray */
+    border: 2px solid black;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#zoom #btn2{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: 1px solid black;
+    bottom: 40px;
+    right: 20px;
+    width:60px;
+    height:60px;
+}
+
+#zoom #plus{
+    border-top-left-radius: 5px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    bottom: 70px;
+    right: 80px;
+    width:30px;
+    height:30px;
+}
+
+#zoom #minus{
+    border-bottom-left-radius: 5px;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    bottom: 40px;
+    right: 80px;
+    width:30px;
+    height:30px;
+}
+
+#zoom a{
+    position: absolute;
+    z-index: 1;
+    bottom: 20px;
+    right: 10px;
+    background-color: #FFF;
+    opacity: 70%;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
